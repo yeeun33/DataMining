@@ -19,6 +19,7 @@
 | 송도 | 인천광역시 연수구 송도동 |
 | 청라 | 인천광역시 서구 청라동 |
 | 운정 | 경기도 파주시 와동동·목동동·야당동 |
+| 검단 | 인천광역시 서구 불로동·당하동·마전동·원당동 |
  
 ---
  
@@ -46,12 +47,28 @@
 ├── models/
 |   ├── Lasso/
 │   |   └── lasso_validation.ipynb      # lasso 검증 코드
-│   |   └── lasso_verify_geumgang.ipynb # 금강펜테리움 센트럴파크 시계열 검증 코드
+│   |   └── lasso_verify_geumgang.ipynb # 금강펜테리움 센트럴파크 연분할 검증 코드
 │   |   └── lasso_whatif_geomdan.ipynb  # 파밀리아 엘리프 시나리오 예측(What-If 분석)
+│   |   └── random.ipynb                # 무작위 lasso 검증 코드
+│   |   └── year_split.ipynb            # 연분할 lasso 검증 코드
 |   ├── Ridge/
 |   |   └── ridge_validation.ipynb      # Ridge 검증 코드
-|   |   └── ridge_verify_geumgang.ipynb # 금강펜테리움 센트럴파크 시계열 검증 코드
+|   |   └── ridge_verify_geumgang.ipynb # 금강펜테리움 센트럴파크 연분할 검증 코드
 |   |   └── ridge_whatif_geomdan.ipynb  # 파밀리아 엘리프 시나리오 예측(What-If 분석)
+│   |   └── random.ipynb                # 무작위 Ridge 검증 코드
+│   |   └── year_split.ipynb            # 연분할 Ridge 검증 코드
+|   ├── KNN/
+│   |   └── knn_validation.ipynb      # KNN 검증 코드
+│   |   └── knn_verify_geumgang.ipynb # 금강펜테리움 센트럴파크 연분할 검증 코드
+│   |   └── knn_whatif_geomdan.ipynb  # 파밀리아 엘리프 시나리오 예측(What-If 분석)
+│   |   └── random.ipynb              # 무작위 KNN 검증 코드
+│   |   └── year_split.ipynb          # 연분할 KNN 검증 코드
+|   ├── RandomForest/
+│   |   └── rf_validation.ipynb      # RF 검증 코드
+│   |   └── rf_verify_geumgang.ipynb # 금강펜테리움 센트럴파크 연분할 검증 코드
+│   |   └── rf_whatif_geomdan.ipynb  # 파밀리아 엘리프 시나리오 예측(What-If 분석)
+│   |   └── random.ipynb             # 무작위 RF 검증 코드
+│   |   └── year_split.ipynb         # 연분할 RF 검증 코드
 └── README.md
 ```
 
@@ -84,6 +101,7 @@
 | 모델 | 유형 | 담당 |
 |------|------|------|
 | K-Nearest Neighbors | 회귀 | 신채희, 김예은 |
+| RandomForest | 회귀 | 신채희 |
 | Linear Regression | 회귀 | 최소연 |
 | Ridge | 회귀 | 문인선 |
 | Lasso | 회귀 | 박소정 |
@@ -259,7 +277,7 @@ pandas, numpy, scikit-learn, matplotlib
 | **박소정** | 2471290 | 
 | 김예은 | 2471369 | 
 | 문인선 | 2471093 | 
-| 신채희 | 2471369 | 
+| 신채희 | 2471288 | 
 | 최소연 | 2471283 | 
  
 ---
